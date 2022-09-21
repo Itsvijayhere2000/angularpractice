@@ -4,7 +4,6 @@
 
 <div>
     <ul>
-        <li *ngFor="let to of todoName;"  [ngClass]="isActive? 'isActive':'inActive'"><input type=checkbox (click)="clicked($event)">{{to}}</li>
-        
+        <li *ngFor="let to of todoName, index as i;"  [ngClass]="isActive? 'isActive':'inActive'"><input type=checkbox (click)="clicked(i)">{{to}}</li>
     </ul>
 </div>

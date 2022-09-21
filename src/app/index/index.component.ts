@@ -23,6 +23,7 @@ isActive:boolean=true;
   }
   
     clicked(event:any){
+      this.todoName[event]
     this.isActive=!this.isActive
     console.log(this.isActive);
     
