@@ -1,0 +1,10 @@
+<input class="textbutton" type="text"[(ngModel)]="todo">
+
+<button (click)="myButton()" class="button">clickme</button>
+
+<div>
+    <ul>
+        <li *ngFor="let to of todoName;"  [ngClass]="isActive? 'isActive':'inActive'"><input type=checkbox (click)="clicked($event)">{{to}}</li>
+        
+    </ul>
+</div>
