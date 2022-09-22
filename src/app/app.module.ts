@@ -7,12 +7,20 @@ import { IndexComponent } from './index/index.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
+import { ContactusComponent } from './contactus/contactus.component';
+import { Component1Component } from './component1/component1.component';
+import { Component2Component } from './component2/component2.component';
 @NgModule({
   declarations: [
     AppComponent,
     IndexComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    AboutusComponent,
+    ContactusComponent,
+    Component1Component,
+    Component2Component
   ],
   imports: [
     BrowserModule,
