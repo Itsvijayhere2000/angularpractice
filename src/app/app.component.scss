@@ -1,5 +1,23 @@
-.tudo{
-    text-align: center;
-    color: coral;
-    background: black;
+// .tudo{
+//     text-align: center;
+//     color: coral;
+//     background: black;
+// }
+ul{
+    display: flex;
+    justify-content: space-around;
+    background-color: brown;
+   
+    
+    li{
+        list-style-type: none;
+        padding: 10px;
+       
+        
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: large;
+        }
+    }
 }
