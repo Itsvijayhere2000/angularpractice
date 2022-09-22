@@ -10,6 +10,8 @@ export class Component1Component implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
   }
+  
 
 }
