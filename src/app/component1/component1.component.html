@@ -1,47 +1,12 @@
 <p class="para">welcome</p>
 <h1>Your Bio</h1>
 
-<div class="container">
-<p class="contactuss">
-    id:1,
-    Name:vijay,
-    age:22,
-    city:kumbakonam,
-     state:Tamilnadu
-</p>
-<p class="contactuss">
-    id:2,
-    Name:siva,
-    age:20,
-    city:dsm,
-     state:Tamilnadu
-</p>
-<p class="contactuss">
-    id:3,
-    Name:vimal,
-    age:22,
-    city:kumbakonam,
-     state:Tamilnadu
-</p>
-<p class="contactuss">
-    id:4,
-    Name:karthi,
-    age:22,
-    city:cuddalore,
-     state:Tamilnadu
-</p>
-<p class="contactuss">
-    id:5,
-    Name:yc,
-    age:22,
-    city:salam,
-     state:Tamilnadu
-</p>
-<p class="contactuss">
-    id:6,
-    Name:kamal,
-    age:22,
-    city:chennai,
-     state:Tamilnadu
-</p>
-</div>
+ <div class="listss" *ngFor="let lists of list">
+
+        <p>id:{{lists.id}}</p>
+        <p>Name:{{lists.Name}}</p>
+        <p>age:{{lists.age}}</p>
+        <p>city:{{lists.city}}</p>
+        <p>state:{{lists.state}}</p>
+    </div>
+
