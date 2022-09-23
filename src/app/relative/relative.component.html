@@ -1,0 +1,6 @@
+<!-- <p>relative works!</p> -->
+<ng-container *ngFor="let list of userdetails,index as i">
+    <li><a [routerLink]="[list.id]">{{list.name}}</a></li>
+
+</ng-container>
+<router-outlet></router-outlet>
