@@ -1,12 +1,18 @@
 <p class="para">welcome</p>
 <h1>Your Bio</h1>
 
- <div class="listss" *ngFor="let lists of list">
+<div class="listDetails">
 
-        <p>id:{{lists.id}}</p>
-        <p>Name:{{lists.Name}}</p>
-        <p>age:{{lists.age}}</p>
-        <p>city:{{lists.city}}</p>
-        <p>state:{{lists.state}}</p>
+    <div class="listss" *ngFor="let list of lists">
+        <div class="name-age">
+            <span>id:{{list.id}}</span>
+            <span>Name:{{list.Name}}</span>
+            <span>age:{{list.age}}</span>
+        </div>
+       <div class="city-state">
+        <p>city:{{list.city}}</p>
+        <p>state:{{list.state}}</p>
+       </div>
     </div>
 
+</div>
