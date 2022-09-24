@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-aboutus',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutusComponent implements OnInit {
 
-  constructor() { }
+  constructor(private compo:Router,private compo2:ActivatedRoute ) { }
 
   ngOnInit(): void {
+  }
+  navigateToComponoent1(){
+    this.compo.navigate(['lists'],{relativeTo:this.compo2})
+
   }
 
 }

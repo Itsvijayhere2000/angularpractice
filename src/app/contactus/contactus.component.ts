@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-contactus',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactusComponent implements OnInit {
 
-  constructor() { }
+  constructor(private root:Router,private roots:ActivatedRoute) { }
 
   ngOnInit(): void {
+  }
+  navigateToRelative(){
+   this.root.navigate(['list'],{relativeTo:this.roots})
   }
 
 }
