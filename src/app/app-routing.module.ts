@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactusComponent } from './contactus/contactus.component';
@@ -30,6 +30,12 @@ const routes: Routes = [{
 
   { path: ":userid", component: ParentComponent }
   ],
+
+},
+{
+  path: 'details',
+  loadChildren:()=>import('./module/module-routing.module').then(m=>m.ModuleRoutingModule)
+  
 
 },
 {
