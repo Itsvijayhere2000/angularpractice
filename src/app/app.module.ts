@@ -14,6 +14,9 @@ import { Component2Component } from './component2/component2.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { RelativeComponent } from './relative/relative.component';
 import { UsersComponent } from './users/users.component';
+import { UserformComponent } from './userform/userform.component';
+import { UserlistComponent } from './userlist/userlist.component';
+import {HttpClientModule} from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,12 +29,15 @@ import { UsersComponent } from './users/users.component';
     Component2Component,
     PagenotfoundComponent,
     RelativeComponent,
-    UsersComponent
+    UsersComponent,
+    UserformComponent,
+    UserlistComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
 
   ],
   providers: [],
