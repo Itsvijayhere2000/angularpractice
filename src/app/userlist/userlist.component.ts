@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { AppService } from '../app.service';
 
 @Component({
   selector: 'app-userlist',
@@ -6,10 +8,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./userlist.component.scss']
 })
 export class UserlistComponent implements OnInit {
-
-  constructor() { }
+  list:any
+  constructor(private appservice:AppService,private router:Router) { }
 
   ngOnInit(): void {
+    this.appservice.userlist().subscribe((data:any)=>{
+      this.list=data
+      console.log(data);
+    })
   }
+  addlist(){
+  
+    
+     this.router.navigate(['userform'])
+
+}
 
 }

@@ -1,1 +1,16 @@
-<p>userform works!</p>
+<p>userform</p>
+<form>
+
+
+    <label for="name">name</label><br>
+    <input type="name" [(ngModel)]="name" name="name" placeholder="name"><br>   
+    <label for="email">Email</label><br>
+    <input type="text" [(ngModel)]="email" name="email" placeholder="email"><br>
+    
+    <label for="message">message</label><br>
+    <input type="text" [(ngModel)]="msg" name="msg"placeholder="message">
+
+    <button (click)="submit()">submit</button>
+</form>
+
+

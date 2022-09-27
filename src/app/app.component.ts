@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { AppService } from './app.service';
 
 @Component({
@@ -7,16 +8,12 @@ import { AppService } from './app.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  list:any=[]
+ 
   title = 'angularpractice';
   
   
-  constructor(private appservice: AppService){
+  constructor(){
 
   }
-  userlist(){
-         this.appservice.getuser().subscribe(data=>{console.log(data)
-         this.list=data
-  })
-  }
+ 
 }

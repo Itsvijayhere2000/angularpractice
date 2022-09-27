@@ -8,40 +8,56 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { RelativeComponent } from './relative/relative.component';
 import { UsersComponent } from './users/users.component';
 import { ParentComponent } from './parent/parent.component';
-const routes: Routes = [{
-  path: 'Hello',
-  redirectTo: 'aboutus',
-  pathMatch: 'full'
+import { UserformComponent } from './userform/userform.component';
+import { UserlistComponent } from './userlist/userlist.component';
+const routes: Routes = [
+//   path: 'Hello',
+//   redirectTo: 'aboutus',
+//   pathMatch: 'full'
 
-},
-{
-  path: 'aboutus',
-  component: AboutusComponent,
-  children: [{ path: 'comp1', component: Component1Component },
-  { path: 'comp2', component: Component2Component },
-  { path: 'lists', component: RelativeComponent }
-  ]
-},
+// },
+// {
+//   path: 'aboutus',
+//   component: AboutusComponent,
+//   children: [{ path: 'comp1', component: Component1Component },
+//   { path: 'comp2', component: Component2Component },
+//   { path: 'lists', component: RelativeComponent }
+//   ]
+// },
 
-{
-  path: 'contactus',
-  component: ContactusComponent,
-  children: [{ path: 'list', component: RelativeComponent },
+// {
+//   path: 'contactus',
+//   component: ContactusComponent,
+//   children: [{ path: 'list', component: RelativeComponent },
 
-  { path: ":userid", component: ParentComponent }
-  ],
+//   { path: ":userid", component: ParentComponent }
+//   ],
 
-},
-{
-  path: 'details',
-  loadChildren:()=>import('./module/module-routing.module').then(m=>m.ModuleRoutingModule)
+// },
+// {
+//   path: 'details',
+//   loadChildren:()=>import('./module/module-routing.module').then(m=>m.ModuleRoutingModule)
   
 
+// },
+{
+ path:'',
+ redirectTo:'userlist',
+ pathMatch:'full'
+},
+
+{
+  path: 'userform',
+  component: UserformComponent
 },
 {
-  path: '**',
-    component: PagenotfoundComponent
+  path:'userlist',
+  component:UserlistComponent
 }
+// {
+//   path: '**',
+//     component: PagenotfoundComponent
+// }
 
 ];
 
