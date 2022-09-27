@@ -24,4 +24,11 @@ export class UserlistComponent implements OnInit {
 
 }
 
+
+// delete(user.id){
+//   this.appservice.delete(userId).subscribe((userlist)=>{
+//     this.addlist()
+//   })
+// }
+
 }

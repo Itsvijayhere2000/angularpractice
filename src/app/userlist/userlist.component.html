@@ -1,11 +1,18 @@
 <p>userlist works!</p>
 <button (click)="addlist()">addlist</button>
-<a routerLink="userform"></a><br>
-<th>name</th> <th>id</th> <th>message</th>
+<!-- <a routerLink="userform"></a><br> -->
+<!-- <th>name</th> <th>id</th> <th>message</th> -->
 
 <ng-container *ngFor="let user of list">
-<li>{{user.name}}{{user.Email}}{{user.message}}</li>
-<!-- <td><button>edit</button></td>
-<td><button>delete</button></td> -->
+<li>{{user.name}}</li>
+<li>{{user.Email}}</li>
+<li>{{user.message}}</li>
+<li>
+    <!-- <span><button (click)="edituser(user.id)">Edit</button></span> -->
+    <!-- <span><button (click)="delete">Delete</button></span> -->
+
+</li>
 
 </ng-container>
+<!-- <td><button>edit</button></td>
+<td><button>delete</button></td> -->
